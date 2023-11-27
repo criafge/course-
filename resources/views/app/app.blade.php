@@ -40,6 +40,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/#enroll">Записаться</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('categories')}}">Виды курсов</a>
+                    </li>
                     @auth
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('login') }}">Выход</a>

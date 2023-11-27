@@ -15,4 +15,7 @@ class CategoryController extends Controller
         return redirect()->back();
     }
     
+    public function index(Category $category){
+        return view('categories', ['categories'=>$category->all]);
+    }
 }
