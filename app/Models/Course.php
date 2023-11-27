@@ -15,4 +15,5 @@ class Course extends Model
         "image",
         "category_id"
     ];
+    
 }
