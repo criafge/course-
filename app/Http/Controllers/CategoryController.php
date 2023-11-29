@@ -18,4 +18,9 @@ class CategoryController extends Controller
     public function index(Category $category){
         return view('categories', ['categories'=>$category->all()]);
     }
+
+    public function courses($courses){
+        $course = Category::find($courses)->course;
+        return view('courses', ['courses'=>$course]);
+    }
 }

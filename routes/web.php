@@ -32,3 +32,5 @@ Route::post("/auth",[HomeController::class,"login"])->name("auth");
 Route::get("/home",[HomeController::class,"index"])->name("home");
 
 Route::get('/categories', [CategoryController::class, 'index'])->name('categories');
+
+Route::get('/course/{course}', [CategoryController::class, 'courses']);

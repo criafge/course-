@@ -1,6 +1,6 @@
 @extends('app.app')
 @section('content')
     @foreach ($categories as $item)
-        <a>{{$item->title}}</a>
+        <a href="/course/{{$item->id}}">{{$item->title}}</a>
     @endforeach
 @endsection
